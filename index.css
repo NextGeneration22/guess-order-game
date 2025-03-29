@@ -1,0 +1,107 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    background-image: url(./images/mountains.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color:white
+}
+
+button{
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    background-color: aqua;
+}
+#structur{
+    color: red;
+}
+
+#game-container {
+    margin: 20px auto;
+}
+
+#image-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ccc;
+    cursor: grab;
+    transition: transform 0.2s;
+}
+
+img.dragging {
+    opacity: 0.5;
+    transform: scale(1.2);
+}
+
+#reset{
+   width: 15vw;
+   height: 8vw;
+   position: absolute;
+   top: 50vh;
+   left:40vw;
+   color: aqua;
+   background-color: rgba(128, 128, 128, 0.001);
+   backdrop-filter: blur(10px);
+   font-size: 2em;
+   border-radius: 15px;
+   cursor: pointer;
+   display:none;
+}
+
+#status-message{
+    color: aqua;
+    font-size: 1.5em;
+}
+
+#confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevent interactions */
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red; /* Default color */
+    opacity: 0.7;
+    animation: fall 4s linear infinite, sway 2s ease-in-out infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100vh);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes sway {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+}
