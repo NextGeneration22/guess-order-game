@@ -52,7 +52,7 @@ img.dragging {
    width: 15vw;
    height: 8vw;
    position: absolute;
-   top: 50vh;
+   top: 30vh;
    left:40vw;
    color: aqua;
    background-color: rgba(128, 128, 128, 0.001);
