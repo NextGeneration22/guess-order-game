@@ -52,8 +52,8 @@ img.dragging {
    width: 15vw;
    height: 8vw;
    position: absolute;
-   top: 30vh;
-   left:40vw;
+   top: 10vh;
+   left:45vw;
    color: aqua;
    background-color: rgba(128, 128, 128, 0.001);
    backdrop-filter: blur(10px);
