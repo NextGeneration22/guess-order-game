@@ -9,7 +9,7 @@ const statusMessage = document.getElementById('status-message');
 const images = ['./images/grey.jpeg', './images/rose-cup.jpeg','./images/wight-cup.jpeg', './images/black-cup.jpeg', './images/red-cup.jpeg', './images/pink-cup.jpeg', './images/blue-cup.jpeg'];
 let currentOrder = [...images].sort(() => Math.random() - 0.5); // Random order
 let randomOrder = [...images].sort(() => Math.random() - 0.5); // Random order
-
+//console.log('currentOrder, randomOrder);
 
 
 // Render images in the container
