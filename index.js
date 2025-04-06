@@ -9,7 +9,7 @@ const statusMessage = document.getElementById('status-message');
 const images = ['./images/grey.jpeg', './images/rose-cup.jpeg','./images/wight-cup.jpeg', './images/black-cup.jpeg', './images/red-cup.jpeg', './images/pink-cup.jpeg', './images/blue-cup.jpeg'];
 let currentOrder = [...images].sort(() => Math.random() - 0.5); // Random order
 let randomOrder = [...images].sort(() => Math.random() - 0.5); // Random order
-console.log(currentOrder, randomOrder)
+
 
 
 // Render images in the container
@@ -84,7 +84,7 @@ function checkOrder(){
         }
       }
       if(inrightPosition === randomOrder.length){
-        document.getElementById("status-message").innerHTML = "you win!! you all of them are in the right order ";
+        document.getElementById("status-message").innerHTML = "you win!! all of them are in the right order ";
         renderRanomimg();
 
       }else{
